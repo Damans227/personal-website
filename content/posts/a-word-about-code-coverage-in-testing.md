@@ -2,6 +2,9 @@
 title: "A Word About Code Coverage in Testing"
 date: 2022-12-28T12:22:58-05:00
 draft: false
+tags:
+  - JavaScript
+  - Testing
 ---
 
 An important aspect of testing is to achieve *good code coverage*. This means, that you want to write tests for the majority of your code (both code files and line of code).

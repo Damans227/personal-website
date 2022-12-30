@@ -2,6 +2,8 @@
 title: "Keep Your Code Clean by Naming Things Meaningfully"
 date: 2022-12-28T18:59:39-05:00
 draft: false
+tags:
+  - Clean-Code
 ---
 
 Naming things _(= variables, properties, functions, methods, classes)_ correctly and in an understandable way *is an extremely important part of writing clean code.*

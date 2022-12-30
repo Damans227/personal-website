@@ -2,6 +2,9 @@
 title: "Two Important Rules of ES6 Modules"
 date: 2022-12-26T11:06:26-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 There are two important Rules, which you need to understand if you're working with `ES6` Modules:

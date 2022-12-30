@@ -2,6 +2,9 @@
 title: "Arrow Functions and Default Arguments in ES6"
 date: 2022-12-25T20:25:38-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 In `ES6` there were two major additions regarding functions: 

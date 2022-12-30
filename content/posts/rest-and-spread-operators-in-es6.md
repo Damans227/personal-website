@@ -2,6 +2,9 @@
 title: "Rest and Spread Operators in ES6"
 date: 2022-12-25T20:39:45-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 `ES6` added two important new operators: `Rest` and `Spread`. Technically they look the same `( ... => three dots)` but they are used in different places.

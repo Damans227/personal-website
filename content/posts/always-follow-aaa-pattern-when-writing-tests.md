@@ -2,6 +2,9 @@
 title: "Always Follow AAA Pattern When Writing Tests"
 date: 2022-12-27T16:41:40-05:00
 draft: false
+tags:
+  - JavaScript
+  - Testing
 ---
 
 Following is a very simple unit test which verifies if the `add()` function works correctly. While the test works, but it does not follow the **AAA(Arrange, Act, Assert)** pattern.

@@ -2,6 +2,9 @@
 title: "Destructuring an Array or an Object in ES6"
 date: 2022-12-25T20:47:19-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 `Destructuring` is a cool new feature which allows you to easily extract values from an object or an array.

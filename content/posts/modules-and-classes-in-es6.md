@@ -2,6 +2,9 @@
 title: "Modules and Classes in ES6"
 date: 2022-12-26T12:57:57-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 ### Modules

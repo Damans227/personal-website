@@ -2,6 +2,8 @@
 title: "Use Unary Operator to Convert Non Numbers to Numbers"
 date: 2022-12-28T10:18:26-05:00
 draft: false
+tags:
+  - JavaScript
 ---
 
 The *unary plus (+)* operator precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn't already.
