@@ -7,7 +7,7 @@ tags:
   - React
 ---
 
-Two data binding means:
+Two way data binding means:
 
 - The data we changed in the view has updated the state.
 - The data in the state has updated the view.
@@ -28,7 +28,7 @@ class UserInput extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.state.name}</h1>
+        <h1> {this.state.name} </h1>
         <input
           type="text"
           onChange={this.handleChange}
