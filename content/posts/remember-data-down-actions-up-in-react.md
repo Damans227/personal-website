@@ -13,5 +13,8 @@ This phrase helps developers understand the flow of information from parent to c
 
 The first and more simple concept, _“data down,”_ refers to the passing of data and/or functions via props from parent to child components. These props are passed down when a child component gets created. We pass data down to child components so they can render them on to the DOM.
 
-> Data is sent down to the child from the parent component with the help of props, and 
-data is sent back up to the parent from the child component with the help of callback functions. 
+> Data is sent down to the child from the parent component with the help of props.
+
+The second and trickier concept to understand, _“action up,”_ refers to sending data back up to the parent from the child component with the help of some action or event. Often these actions are connected to a _callback function_.
+
+> Data is sent back up to the parent from the child component with the help of callback functions. 
