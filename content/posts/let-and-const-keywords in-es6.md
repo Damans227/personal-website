@@ -2,6 +2,9 @@
 title: "let and const keywords in ES6"
 date: 2022-12-25T09:05:15-05:00
 draft: false
+tags:
+  - JavaScript
+  - ES6
 ---
 
 `let` and `const` are new keywords introduced in `ES6` which enable us to change the way we work with variables and constants. Let and const are both block scoped. Prior to `ES6`, we had only function scope and global scope. Block scope restricts variable access to blocks, i.e. constructs with curly braces, such as `if...else`, `for loops`, etc. As an example:
