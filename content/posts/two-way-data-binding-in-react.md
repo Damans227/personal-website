@@ -15,27 +15,27 @@ Two data binding means:
 Following code block implements the two way binding in react:
 
 ```javascript
-class UserInput extends React.Component{
-
+class UserInput extends React.Component {
   state = {
-      name:"reactgo"
-  }
-  handleChange = (e) =>{
+    name: "reactgo",
+  };
+  handleChange = (e) => {
     this.setState({
-        name: e.target.value
-    })
-  }
+      name: e.target.value,
+    });
+  };
 
-   render(){
-    return(
+  render() {
+    return (
       <div>
-       <h1>{this.state.name}</h1>
-       <input type="text"
-         onChange={this.handleChange}
-         value={this.state.name} />
+        <h1>{this.state.name}</h1>
+        <input
+          type="text"
+          onChange={this.handleChange}
+          value={this.state.name}
+        />
       </div>
-      )
-   }
+    );
+  }
 }
 ```
-
