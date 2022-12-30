@@ -1,7 +1,10 @@
 ---
-title: "Remember Data Down Actions Up in React"
+title: "Remember Data Down Action Up in React"
 date: 2022-12-30T14:04:04-05:00
 draft: false
+tags:
+  - JavaScript
+  - React
 ---
 
 ## “Data down, Action up”
