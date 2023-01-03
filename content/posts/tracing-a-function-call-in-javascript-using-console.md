@@ -6,7 +6,7 @@ tags:
   - JavaScript
 ---
 
-In javaScript we're often working in the context of deeply nested functions and objects. When debugging our code, it may be necessary to traverse through the stack trace of our code. In order to do that, we can use `console.trace()` in the function that we would expect to be at the _top of the call stack_. Using `console.trace()` we can see exactly what happened before our function was pushed on to the top of the call stack. 
+In `JavaScript` we're often working in the context of deeply nested functions and objects. When debugging our code, it may be necessary to traverse through the stack trace of our code. In order to do that, we can use `console.trace()` in the function that we would expect to be at the _top of the call stack_. Using `console.trace()` we can see exactly what happened before our function was pushed on to the top of the call stack. 
 
 For Example: 
 
