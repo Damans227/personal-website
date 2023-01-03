@@ -1,12 +1,14 @@
 ---
-title: "Tracing A Function Call In JasvaScript Using Console"
-date: 2023-01-03T18:03:59-05:00
+title: "Tracing a Function Call in Javascript Using Console"
+date: 2023-01-03T14:38:04-05:00
 draft: false
 tags:
   - JavaScript
 ---
 
-In `JavaScript` we're often working in the context of deeply nested functions and objects. When debugging our code, it may be necessary to traverse through the stack trace of our code. In order to do that, we can use `console.trace()` in the function that we would expect to be at the _top of the call stack_. Using `console.trace()` we can see exactly what happened before our function was pushed on to the top of the call stack. 
+In `JavaScript` we're often working in the context of deeply nested functions and objects. When debugging our code, it may be necessary to traverse through the stack trace of our code. 
+
+In order to do that, we can use `console.trace()` in the function that we would expect to be at the _top of the call stack_. Using `console.trace()` we can see exactly what happened before our function was pushed on to the top of the call stack. 
 
 For Example: 
 
@@ -35,4 +37,3 @@ getControlsForPod	@	map.js:375
 (anonymous)	@	component.js:73
 
 ```
-
