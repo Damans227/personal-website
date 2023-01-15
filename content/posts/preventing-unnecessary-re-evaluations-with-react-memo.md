@@ -32,3 +32,6 @@ const Todos = ({ todos }) => {
 
 export default memo(Todos);
 ```
+
+> It's important to note that `React.memo` only checks for prop changes. If a function component wrapped in `React.memo` has a `useState`, `useReducer` or `useContext` Hook in its implementation, it will still re-render when state or context change.
+
