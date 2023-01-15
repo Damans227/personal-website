@@ -17,7 +17,7 @@ The `useCallback` Hook only runs when one of its dependencies update. This can i
 
 In JavaScript, functions display referential equality. This means they are only considered equal if they point to the same object.
 
-Therefore if you were two declare two functions with identical implementations they would not be equal to each other.
+Therefore if you were to declare two functions with identical implementations they would not be equal to each other.
 
 For example:
 
