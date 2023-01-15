@@ -1,5 +1,5 @@
 ---
-title: "What Is UseCallback Hook in React"
+title: "What Is useCallback Hook in React"
 date: 2023-01-15T14:50:34-05:00
 draft: false
 tags:
