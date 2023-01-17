@@ -1,5 +1,5 @@
 ---
-title: "UseEffect Usecase: Run Side Effect Only Once After Initial Render"
+title: "useEffect Usecase: Run Side Effect Only Once After Initial Render"
 date: 2023-01-10T12:08:17-05:00
 draft: false
 tags:
