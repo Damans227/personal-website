@@ -32,5 +32,7 @@ Example:
 
 Now of course it's not a good practice even the things are working fine with this approach. You're rendering too many `HTML` elements and ultimately that also makes your application *slower*.
 
+To learn about how to use `React.Fragments`, checkout the [official documentation](https://reactjs.org/docs/fragments.html) from **ReactJS Org**. 
+
 ## Using `Refs` and `Portals` to write imperative code WHEN necessary
 
