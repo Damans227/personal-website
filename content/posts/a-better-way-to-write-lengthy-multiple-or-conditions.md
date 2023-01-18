@@ -1,5 +1,5 @@
 ---
-title: "A Better Way to Write Lengthy Multiple or Conditions"
+title: "A Better Way to Write Lengthy Multiple `OR` Conditions"
 date: 2023-01-18T15:33:37-05:00
 draft: false
 tags:
