@@ -18,6 +18,8 @@ Redux can be described in three fundamental principles:
 
 The global state of your application is stored in a large, single object, called redux store.
 
+The Redux store itself is a simple observable/pub-sub implementation, with a single "change/updated" event emitter. The use of actions and reducers has some similarities to CQRS and event sourcing as well. See https://redux.js.org/introduction/motivation and https://redux.js.org/introduction/prior-art .
+
 ```javascript
 console.log(store.getState())
 
