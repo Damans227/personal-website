@@ -8,7 +8,7 @@ tags:
   - Redux
 ---
 
-I started learning **Redux** this week and while doing so, I realized that before I learn the core Redux library and the functions it has to offer, I'd be better off learning about the Redux as a design pattern for global state management. Knowing the Redux design pattern, I can use the best tool available to implement it (i.e. Redux toolkit and Redux library) to their fullest potential. 
+I started learning **Redux** this week and while doing so, I realized that before I learn the core Redux library and the functions it has to offer, I'd be better off learning about the Redux as a design pattern for global state management. With a thorough understanding of the Redux design pattern, I can utilize the best tools available to implement the pattern (i.e. the Redux toolkit and Redux library) to their full potential.
 
 > Yes, before Redux is a library, it is a design pattern. Redux has reducers and actions. Reducers store the state and actions change the state. 
 
