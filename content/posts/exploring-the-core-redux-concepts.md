@@ -20,7 +20,7 @@ const store = redux.createdStore();
 
 ## Reducer
 
-This store is responsibe to hold our data. The data it holds is determined by the **reducer**. The reducer has one job, i.e. to spit out a new snapshot of the store when an action occurs. So, the next thing we want to add is a reducer function.
+This store is responsible to hold our data. The data it holds is determined by the **reducer**. The reducer has one job, i.e. to spit out a new snapshot of the store when an action occurs. So, the next thing we want to add is a reducer function.
 
 > Reducer function is always a pure function. That means, same input paramasters must always produce the same output and there should be no side effects inside of that function.
 
