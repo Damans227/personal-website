@@ -55,7 +55,6 @@ function getDrink (type) {
 }
 
 var drink = getDrink('coke');
-// The drink I chose was Coke
 console.log(drink);
 ```
 We’ve saved a few lines of code from the switch, and the data is a lot cleaner in presentation 😃 
