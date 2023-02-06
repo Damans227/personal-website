@@ -24,7 +24,8 @@ default:
 }
 console.log(drink); // 'Coke'
 ```
-It’s similar to `if` and `else` statemens below:
+
+It’s similar to `if` and `else` statements below:
 
 ```javascript
 function getDrink (type) {
