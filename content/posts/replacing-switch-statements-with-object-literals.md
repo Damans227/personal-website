@@ -10,6 +10,23 @@ tags:
 A typical `switch` statement in javascript looks like this example below: 
 
 ```javascript
+var type = 'coke';
+var drink;
+switch(type) {
+case 'coke':
+  drink = 'Coke';
+  break;
+case 'pepsi':
+  drink = 'Pepsi';
+  break;
+default:
+  drink = 'Unknown drink!';
+}
+console.log(drink); // 'Coke'
+```
+It’s similar to `if` and `else` statemens below:
+
+```javascript
 function getDrink (type) {
   if (type === 'coke') {
     type = 'Coke';
