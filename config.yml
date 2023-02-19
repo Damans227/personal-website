@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://damanarora.netlify.app/"
 title: Daman Arora
 paginate: 5
 theme: PaperMod
