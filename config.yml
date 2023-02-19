@@ -75,7 +75,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "Hey there! \U0001F44B"
-        Content: I'm Daman Arora [(he/him)](https://pronoun.is/he) and I enjoy building things. [Read more.](/about) 
+        Content: I'm Daman Arora [(he/him)](https://en.wikipedia.org/wiki/Preferred_gender_pronoun) and I enjoy building things. [Read more.](/about) 
 
     socialIcons:
         - name: twitter
