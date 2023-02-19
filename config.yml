@@ -79,13 +79,13 @@ params:
 
     socialIcons:
         - name: twitter
-          url: ""
+          url: "https://twitter.com/DamanAroraCa"
         - name: github
-          url: ""
+          url: "https://github.com/Damans227"
         - name: linkedin
-          url: ""
+          url: "https://www.linkedin.com/in/daman-arora/"
         - name: email
-          url: ""
+          url: "mailto:Damans227@gmail.com"
         - name: rss
           url: /index.xml
 
