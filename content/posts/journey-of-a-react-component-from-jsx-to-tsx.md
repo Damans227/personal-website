@@ -8,15 +8,14 @@ tags:
   - TypeScript
 ---
 
-Whenever we define a parent and a child component in *React* using *Typescript*, we
-also define an interface in the child component which defines what props child expects to recieve. 
+Whenever we define a parent and a child component in *React* using *Typescript*, we **must always define an Interface** in the child component which defines what props child expects to recieve. 
 
 By adding an interface to the child component, we are adding two big checks:
 
  - **In Parent Component:** Are we providing the correct props to Child when we add it ti Parent? 
  - **In Child Component:** Are we using the correctly named + typed props in Child? 
 
-Example: 
+**Example:** 
 
 Child.tsx:
 
