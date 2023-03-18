@@ -1,5 +1,5 @@
 ---
-title: "Journey of a React App From Jsx to Tsx: Handling Props"
+title: "Journey of a React App From Javscript to Typescript"
 date: 2023-03-18T10:47:57-04:00
 draft: false
 tags:
@@ -7,6 +7,8 @@ tags:
   - React
   - TypeScript
 ---
+
+### Handling Props in Child and Parent Component
 
 Whenever we define a parent and a child component in *React* using *Typescript*, we **must always define an Interface** in the child component which defines what props child expects to recieve. 
 
@@ -40,3 +42,28 @@ const parent = () -> {
 
 export default Parent
 ```
+
+### Making Typescript understand that we are creating a React Component
+
+The handling of props may seem sufficient, but this does not provide a complete picture of Typescript. Even though TypeScript forces the parent component to honor the prop name and type, it does not inform the Typescript compiler that we are defining a React component.
+
+**Compilers need to understand that this is indeed a React Component** and not just another method returning JSX.
+
+**Why is it important to inform the compiler explicitly that we are defining a React component?**
+
+Basically, *each React Component has some default properties associated with it*, and these properties can only be leveraged if the compiler is aware of them. In the event that the compiler does not know that the method you are defining is a React component property, it will error out when you attempt to use any of the default React component properties, such as `displayName`.
+
+**Example:**
+
+```jsx
+interface ChildProps {
+    color: string
+}
+
+export const ChildAsFC: react.FC<ChildProps> = ({ color }: ChildProps){
+    return <div>{color}</div>
+}
+```
+> In the example above,  `react.FC<ChildProps>` tells the Typescript Compiler, that we are defining a *React Function Component*, which accepts props of type `ChildProps`.
+
+> Another upside of making the Compiler aware of the React Component is that it allows you to use *Children* prop, that gets passed to a component when you define it as an opening and closing tags. 
