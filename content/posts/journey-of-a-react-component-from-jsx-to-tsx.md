@@ -78,7 +78,7 @@ Consequently, in the example below, the compiler infers that the type of `name` 
 const [name, setName] = useState('')
 ```
 
-However, if we were to initialize a state variable that was of a complex type, such as an `Array` of type `String`, then Typecript would not be able to infer the type of array unless we explicitly define it. This can be accomplished by passing in the type of array as generic. For example:
+However, if we were to initialize a state variable that was of a complex type, such as an `Array` of type `String`, then Typecript would not be able to infer the type of array unless we explicitly define it. This can be accomplished by passing in the type of array as [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html). For example:
 
 ```jsx
 const [guests, setGuests] = useState<string[]>([])
