@@ -67,3 +67,19 @@ export const ChildAsFC: react.FC<ChildProps> = ({ color }: ChildProps){
 > In the example above,  `react.FC<ChildProps>` tells the Typescript Compiler, that we are defining a *React Function Component*, which accepts props of type `ChildProps`.
 
 > Another upside of making the Compiler aware of the React Component is that it allows you to use *Children* prop, that gets passed to a component when you define it as an opening and closing tags. 
+
+### Type Inference with State in Typescript
+
+Consider the case in which we use the `useState` hook to define a state variable in a component. As we know, the `useState` hook takes in a **default value**. A Typescript compiler uses this default value to determine the type of a state variable. 
+
+Consequently, in the example below, the compiler infers that the type of `name` is a `string`, since the default value is an empty string:
+
+```jsx
+const [name, setName] = useState('')
+```
+
+However, if we were to initialize a state variable that was of a complex type, such as an `Array` of type `String`, then Typecript would not be able to infer the type of array unless we explicitly define it. This can be accomplished by passing in the type of array as generic. For example:
+
+```jsx
+const [guests, setGuests] = useState<string[]>([])
+```
