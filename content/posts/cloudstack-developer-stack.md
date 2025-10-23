@@ -13,7 +13,8 @@ The Linux VM hosts the CloudStack Management Server, MySQL, and NFS services.
 This setup enables full backend–frontend integration and debugging in isolation.
 It simplifies testing and rapid iteration without needing a full production setup.
 
-               
+---
+            
                 ┌─────────────────────────────────────────────────────────────┐
                 │                  macOS (your laptop)                        │
                 │   ┌───────────────────────────────────────────────────────┐ │
