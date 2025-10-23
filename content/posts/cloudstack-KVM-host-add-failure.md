@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# CloudStack KVM Host Add Failure - Part 1
-
 Error encountered while attempting to add a KVM host to CloudStack:
 
 > `Failed to setup keystore on the KVM host: 192.168.122.10`

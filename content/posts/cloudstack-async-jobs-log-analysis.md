@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# Using the `async_job` Table in Apache CloudStack
-
 Apache CloudStack performs many operations asynchronously — such as VM deployments, volume operations, and network changes. The `async_job` table in the CloudStack database is the primary source of truth for **tracking, debugging, and correlating logs** related to background jobs.
 
 ---
