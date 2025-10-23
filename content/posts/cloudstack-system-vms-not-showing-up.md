@@ -1,5 +1,5 @@
 ---
-title: "Why `sudo echo "..." > file` Doesn’t Work — and How to Fix It"
+title: 'Why `sudo echo "..." > file` Doesn’t Work — and How to Fix It'
 date: 2025-10-22T15:33:37-05:00
 draft: false
 tags:
