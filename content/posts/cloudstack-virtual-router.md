@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# CloudStack Virtual Router Overview
-
 ## In CloudStack:
 
 **Isolated Networks** and **VPCs** depend on a **Virtual Router (VR)** for all **external (north-south) connectivity**.

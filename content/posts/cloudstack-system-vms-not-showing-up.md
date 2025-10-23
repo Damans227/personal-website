@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# Why `sudo echo "..." > file` Doesn’t Work — and How to Fix It
-
 Tried this command:
 
 ```bash

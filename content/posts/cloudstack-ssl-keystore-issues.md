@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# CloudStack KVM Host Add Failure - Part 2
-
 This document captures the logs and analysis of a failure while attempting to add a KVM host to a CloudStack zone, due to issues setting up the agent certificate keystore.
 
 ---

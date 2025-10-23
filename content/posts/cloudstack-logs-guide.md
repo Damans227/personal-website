@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# CloudStack Logging Guide
-
 ## 1. Where CloudStack Logs Live
 
 CloudStack has three main components — each with its own logs:

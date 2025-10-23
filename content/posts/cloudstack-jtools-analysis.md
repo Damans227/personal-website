@@ -7,8 +7,6 @@ tags:
   - kvm
 ---
 
-# JVM Instrumentation for CloudStack Debugging
-
 This guide provides a concise reference for using JVM diagnostic tools to monitor and debug the CloudStack Management Server, especially when installed via `.deb` packages.
 
 ---
