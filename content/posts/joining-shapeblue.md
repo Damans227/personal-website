@@ -1,8 +1,8 @@
 ---
 title: "Joining ShapeBlue"
 date: 2025-10-22T10:00:00Z
-tags: ["open source", "apache cloudstack", "terraform", "career", "shapeblue"]
-draft: false
+tags: ["open source", "apache cloudstack", "career", "shapeblue"]
+draft: true
 ---
 
 I’ve been part of the [**Apache CloudStack**](https://cloudstack.apache.org/) community for some time, contributing across projects — most notably building the **CloudStack Terraform provider** during *Google Summer of Code*.  
