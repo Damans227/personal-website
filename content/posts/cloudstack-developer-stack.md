@@ -6,6 +6,13 @@ tags:
   - cloudstack
   - kvm
 ---
+
+The CloudStack developer stack connects a macOS host and a Linux Dev VM for local development.
+On macOS, developers run the Vue.js UI and connect via SSH tunnel to Jetty on the VM.
+The Linux VM hosts the CloudStack Management Server, MySQL, and NFS services.
+This setup enables full backend–frontend integration and debugging in isolation.
+It simplifies testing and rapid iteration without needing a full production setup.
+
                
                 ┌─────────────────────────────────────────────────────────────┐
                 │                  macOS (your laptop)                        │
