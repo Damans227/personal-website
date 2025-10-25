@@ -5,7 +5,7 @@ tags: ["open source", "apache cloudstack", "career", "shapeblue"]
 draft: true
 ---
 
-I’ve been part of the [**Apache CloudStack**](https://cloudstack.apache.org/) community for some time, contributing across projects — most notably building the **CloudStack Terraform provider** during *Google Summer of Code*.  
+I’ve been part of the [**Apache CloudStack**](https://cloudstack.apache.org/) community for some time, and have contributed across projects — most notably built new data sources and resources for the **CloudStack Terraform Provider** during *Google Summer of Code*.  
 You can read more about that work in my [final GSoC report](/posts/GSoC-2022-final-report-daman-arora) or [watch my presentation from the CloudStack Collaboration Conference](https://www.youtube.com/watch?v=WdA2epTfu7k).
 
 [**ShapeBlue**](https://www.shapeblue.com/) has long been one of the driving forces behind the CloudStack ecosystem — known for its engineering excellence, community leadership, and genuine commitment to open-source values.  
