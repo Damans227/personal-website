@@ -36,4 +36,4 @@ It’s an opportunity to work alongside the people who’ve been instrumental in
 
 I’m incredibly grateful for the open-source community that helped me reach this point — and excited to keep learning, contributing, and building software that lasts.
 
-If you’re interested in [**Apache CloudStack**](https://cloudstack.apache.org/), **infrastructure-as-code**, or just passionate about open-source — let’s connect and collaborate!
+If you’re interested in [**Apache CloudStack**](https://cloudstack.apache.org/) or just passionate about open-source — let’s connect and collaborate!
