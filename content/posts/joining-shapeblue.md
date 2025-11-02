@@ -18,7 +18,7 @@ As I prepare to begin this new chapter, I wanted to share a few reasons why I’
 
 Over the past few years, I’ve contributed to various open-source projects beyond GSoC — from small community PRs to funded open-source initiatives — but few communities compare to CloudStack’s unique blend of **technical depth** and **collaborative mentorship** I’ve experienced. 
 
-My GSoC mentors were ShapeBlue engineers **(Shoutout to Pearl Dsilva, Boris Stoyanov, Harikrishna)** , and that experience was foundational for me: it pushed me to learn **Go**, understand distributed systems at scale, and adopt real-world software engineering practices. Joining the same team that shaped that experience feels like completing the circle.
+My GSoC mentors were ShapeBlue engineers **(Shoutout to Pearl Dsilva, Boris Stoyanov, Harikrishna)**, and that experience was foundational for me: it pushed me to learn **Go**, understand distributed systems at scale, and adopt real-world software engineering practices. Joining the same team that shaped that experience feels like completing the circle.
 
 ---
 
