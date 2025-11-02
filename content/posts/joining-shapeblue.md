@@ -2,7 +2,7 @@
 title: "Joining ShapeBlue"
 date: 2025-11-01T10:00:00Z
 tags: ["open source", "apache cloudstack", "career", "shapeblue"]
-draft: true
+draft: false
 ---
 
 I’ve been part of the [**Apache CloudStack**](https://cloudstack.apache.org/) community for a while now. One of my major contributions to the project is that I built new data sources and resources for the **CloudStack Terraform Provider** during my [**Google Summer of Code**](https://summerofcode.withgoogle.com/archive/2022/projects/ZVraist1) project, helping extend how CloudStack integrates with modern DevOps workflows.  
