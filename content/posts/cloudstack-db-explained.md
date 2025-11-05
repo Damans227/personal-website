@@ -93,5 +93,3 @@ This command:
 2. Creates `cloud` and `cloud_usage`
 3. Creates the user `cloud@localhost` with password `cloud`
 4. Populates the schema and default data
-
-```
