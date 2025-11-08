@@ -52,7 +52,8 @@ Provides external access:
 ### Storage
 Used for storage operations:
 - Copying templates, snapshots, and ISOs.
-- Host ↔ Primary or Secondary Storage transfers.
+- Host ↔ Secondary Storage transfers.
+- NOT used for primary storage transfers. 
 
 **Isolation:** Optional but recommended for performance.
 
