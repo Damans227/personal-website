@@ -116,6 +116,8 @@ CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware
         |
         +-- Shared Storage (Datastores: NFS / iSCSI / FC)
 
+```
+
 ---
 
 ## Comparison Summary
