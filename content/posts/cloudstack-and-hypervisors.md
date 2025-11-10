@@ -9,7 +9,7 @@ tags:
   - vmware
 ---
 
-CloudStack supports three main hypervisors — **KVM**, **XenServer**, and **VMware (vSphere/ESXi)**. Each integrates differently with the CloudStack management plane.
+CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware (vSphere/ESXi)**. Each integrates differently with the CloudStack management plane.
 
 ## Overview
 
