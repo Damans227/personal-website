@@ -1,13 +1,13 @@
 ---
-title: "CloudStack Template Download and Console Session Flow"
-date: 2025-11-10T14:00:00-05:00
+title: "CloudStack Template Download (SSVM) and Console Session Flow (CPVM)"
+date: 2025-11-10T14:00:00Z
 draft: false
 tags:
-  - cloudstack
-  - ssvm
-  - cpvm
-  - templates
-  - console
+  - CloudStack
+  - SSVM
+  - CPVM
+  - Templates
+  - Console
 ---
 
 ## 1. Template / ISO Download Workflow
