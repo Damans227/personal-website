@@ -1,12 +1,11 @@
 ---
-title: "Understanding CloudStack Hypervisors — KVM vs XenServer vs VMware"
-date: 2025-11-10T12:30:00-05:00
+title: "CloudStack and Hypervisors: Comparing KVM, Xen, and VMware"
+date: 2025-11-10T12:00:00Z
 draft: false
 tags:
-  - cloudstack
-  - kvm
-  - xenserver
-  - vmware
+  - CloudStack
+  - Hypervisors
+  - Virtualization
 ---
 
 CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware (vSphere/ESXi)**. Each integrates differently with the CloudStack management plane.
