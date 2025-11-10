@@ -57,13 +57,13 @@ When a user opens the **VM Console** (via UI or API), CloudStack routes the conn
 
 | Step | Action                           | Description                                                                                                                         |
 | ---- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-|1     | User initiates a console session | The user clicks **“View Console”** in the CloudStack UI — request goes to the **Management Server (CSMan)**.                        |
-|2     | Management chooses suitable CPVM | CloudStack selects an active **CPVM** in that zone and generates a **temporary authentication token**.                              |
-|3     | Management sends redirection URL | The user’s browser receives a link like: <br>`https://cpvm-zone1.example.com:8443/console?cmd=auth&token=XYZ`                       |
-|4     | User resolves CPVM address       | Browser resolves CPVM hostname/IP via DNS or direct IP.                                                                             |
-|5     | User connects to CPVM via HTTPS  | Browser opens a secure HTTPS session to the CPVM’s **public interface**.                                                            |
-|6     | CPVM validates session token     | CPVM contacts the **Management Server** via the management/control network to verify the token.                                     |
-|7     | CPVM connects to VM console      | CPVM connects internally to the **VM’s VNC port** on the hypervisor and streams that session over HTTPS back to the user’s browser. |
+| 1    | User initiates a console session | The user clicks **“View Console”** in the CloudStack UI — request goes to the **Management Server (CSMan)**.                        |
+| 2    | Management chooses suitable CPVM | CloudStack selects an active **CPVM** in that zone and generates a **temporary authentication token**.                              |
+| 3    | Management sends redirection URL | The user’s browser receives a link like: <br>`https://cpvm-zone1.example.com:8443/console?cmd=auth&token=XYZ`                       |
+| 4    | User resolves CPVM address       | Browser resolves CPVM hostname/IP via DNS or direct IP.                                                                             |
+| 5    | User connects to CPVM via HTTPS  | Browser opens a secure HTTPS session to the CPVM’s **public interface**.                                                            |
+| 6    | CPVM validates session token     | CPVM contacts the **Management Server** via the management/control network to verify the token.                                     |
+| 7    | CPVM connects to VM console      | CPVM connects internally to the **VM’s VNC port** on the hypervisor and streams that session over HTTPS back to the user’s browser. |
 
 ### Textual Flow Diagram
 
@@ -100,9 +100,5 @@ When a user opens the **VM Console** (via UI or API), CloudStack routes the conn
 
 ## Summary
 
-- **SSVM** handles all **template, ISO, and snapshot copy/download** jobs to and from secondary storage.  
+- **SSVM** handles all **template, ISO, and snapshot copy/download** jobs to and from secondary storage.
 - **CPVM** handles **console access (VNC)** securely via HTTPS and token validation.
-
-Understanding these flows helps diagnose issues such as:
-- Templates stuck in *Downloading* or *Not Ready* states.
-- Console sessions that fail to load or timeout.
