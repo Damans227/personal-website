@@ -10,6 +10,8 @@ tags:
 
 CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware (vSphere/ESXi)**. Each integrates differently with the CloudStack management plane.
 
+---
+
 ## Overview
 
 | Feature | **KVM** | **XenServer** | **VMware (vSphere)** |
@@ -21,6 +23,8 @@ CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware
 | Max hosts/cluster | Unlimited | 64 (v7.5) | 32 (v5.5), 64 (v6.0+) |
 | HA | Yes (via libvirt) | Yes (internal) | Native vSphere HA |
 | Load balancing | Manual | None | Native DRS |
+
+---
 
 ## 1. KVM with CloudStack
 
@@ -112,17 +116,7 @@ CloudStack supports three main hypervisors, **KVM**, **XenServer**, and **VMware
         |
         +-- Shared Storage (Datastores: NFS / iSCSI / FC)
 
-System VM Flow:
-----------------
-CloudStack → vCenter → ESXi host → System VM
-(System VMs consume IPs from management CIDR)
-SSVM must reach vCenter to copy templates/snapshots.
-
-Notes:
-- CloudStack never talks directly to ESXi hosts.
-- vCenter is the single control plane.
-- DRS/HA functions are handled natively by vSphere.
-```
+---
 
 ## Comparison Summary
 
@@ -134,6 +128,8 @@ Notes:
 | Licensing | Open-source | Free/Commercial | Proprietary |
 | Storage Handling | Mount per host | Managed by pool | Managed by vCenter |
 | Best Use Case | Linux-native deployments | Citrix-based infra | Enterprise VMware shops |
+
+---
 
 ## Conclusion
 
