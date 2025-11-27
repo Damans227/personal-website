@@ -1,3 +1,4 @@
+```
 1. Upload template to CloudStack
    └── Template goes to secondary storage
    └── Stored at /export/secondary/template/...
@@ -15,3 +16,4 @@
    └── CloudStack checks: "Is template on primary?"
    └── Yes → skip copy
    └── VM disk created directly
+```
