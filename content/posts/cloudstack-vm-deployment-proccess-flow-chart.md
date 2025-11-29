@@ -1,10 +1,15 @@
 ---
 title: "CloudStack VM Deployment - Complete Flow"
-date: 2022-12-27T16:41:40-05:00
+date: 2024-11-29T16:00:00+05:30
 draft: false
 tags:
-  - Cloudstack
-  - Virtual Machine
+  - CloudStack
+  - Virtualization
+  - KVM
+---
+
+Understanding the sync and async phases of VM deployment.
+
 ---
 
 ## SYNC PHASE (~250ms)
