@@ -36,4 +36,4 @@ HTTP POST /deployVirtualMachine
     │   ├── StartCommand → KVM Host
     │   └── State: Starting → Running
     └── Complete job-43 with UserVmResponse
-    ```
+```
