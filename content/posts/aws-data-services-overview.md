@@ -19,24 +19,24 @@ AWS has a lot of data services, and the names alone don't tell you what each one
 │  DATABASES (operational, low latency)                       │
 ├─────────────────────────────────────────────────────────────┤
 │  RDS                relational SQL                          │
-│  DynamoDB           NoSQL key-value, serverless              │
-│  ElastiCache        in-memory cache (Redis/Memcached)        │
-│  DocumentDB         MongoDB-compatible document DB           │
-│  Neptune            graph DB (nodes + edges)                 │
-│  Timestream         time-series DB                           │
-│  Managed Blockchain Hyperledger/Ethereum                     │
+│  DynamoDB           NoSQL key-value, serverless             │
+│  ElastiCache        in-memory cache (Redis/Memcached)       │
+│  DocumentDB         MongoDB-compatible document DB          │
+│  Neptune            graph DB (nodes + edges)                │
+│  Timestream         time-series DB                          │
+│  Managed Blockchain Hyperledger/Ethereum                    │
 ├─────────────────────────────────────────────────────────────┤
 │  ANALYTICS (batch, big data, querying)                      │
 ├─────────────────────────────────────────────────────────────┤
-│  Redshift           data warehouse (columnar SQL at scale)   │
-│  EMR                managed Hadoop/Spark cluster             │
-│  Athena             SQL queries directly on S3               │
-│  QuickSight         BI dashboards/visualization              │
+│  Redshift           data warehouse (columnar SQL at scale)  │
+│  EMR                managed Hadoop/Spark cluster            │
+│  Athena             SQL queries directly on S3              │
+│  QuickSight         BI dashboards/visualization             │
 ├─────────────────────────────────────────────────────────────┤
 │  DATA MOVEMENT                                              │
 ├─────────────────────────────────────────────────────────────┤
-│  Glue               managed ETL (extract/transform/load)     │
-│  DMS                Database Migration Service               │
+│  Glue               managed ETL (extract/transform/load)    │
+│  DMS                Database Migration Service              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
