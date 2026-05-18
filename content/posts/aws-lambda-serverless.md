@@ -23,17 +23,65 @@ Examples of serverless services in AWS: Lambda, Fargate, DynamoDB, S3, Aurora Se
 
 ---
 
-## EC2 vs Lambda
+## Composing a serverless architecture
 
-| | EC2 | Lambda |
-|---|-----|--------|
-| Unit | Virtual server | Function |
-| Lifecycle | Continuously running | On-demand, per invocation |
-| Scaling | Manual / ASG | Automatic |
-| Limits | CPU/RAM you pick | Time — max 15 min execution |
-| Billing | Per second running | Per request + compute time |
+The core idea goes beyond a single function. You break your app into **small functions**, each triggered by an event, each calling **managed AWS services** for storage, data, and messaging. There are no servers to manage — and done right, your whole app is serverless.
+
+```
+Traditional:  1 big app on EC2, you manage everything underneath
+Serverless:   many small functions + managed services, glued by events
+```
+
+Here is how the pieces compose:
+
+```
+User → API Gateway → Lambda functions → S3 / DynamoDB / SQS / SNS / ...
+                          │
+                          └── each function = one small job
+```
+
+You write the *logic*. AWS provides the *plumbing* — triggers, scaling, runtime, and infrastructure.
+
+---
+
+## EC2 vs serverless workloads
+
+| | EC2 (server-based) | Serverless (Lambda + managed) |
+|---|---|---|
+| **Unit of work** | A running server | A function invocation |
+| **Lifecycle** | Always on | Runs on an event, then exits |
+| **Scaling** | Manual / ASG | Automatic, instant |
+| **Billing** | Per second running — idle still costs | Per invocation — idle is $0 |
+| **Execution time** | Unlimited | Max 15 min (Lambda) |
+| **State** | Persistent in memory | Stateless — externalize to DB/S3 |
+| **OS / runtime control** | Full | None — AWS-managed |
+| **Cold start** | None | A slight delay after idle |
+| **Best for** | Steady traffic, long processes, full control | Bursty, event-driven, short tasks |
+| **Ops burden** | Patching, scaling, monitoring | Almost none |
+| **Cost at high steady load** | Cheaper | Can get expensive |
+| **Cost at low/spiky load** | Wasteful — idle servers | Very cheap |
 
 **The mental shift:** EC2 is a *house* that is always on. Lambda is a *light switch* that turns on only when something triggers it.
+
+---
+
+## When each wins
+
+**EC2 / containers win for:**
+
+- Steady, predictable traffic.
+- Long-running processes (over 15 minutes).
+- Real-time work — websockets, low-latency.
+- Specialized OS or kernel needs.
+- High constant throughput, where serverless cost balloons.
+
+**Serverless wins for:**
+
+- Spiky or unpredictable load.
+- Event-driven work — uploads, webhooks, schedules.
+- Startups, MVPs, and prototypes.
+- Background tasks pulled off the main app.
+- When you simply don't want to manage anything.
 
 ---
 
@@ -111,7 +159,7 @@ Notice what is **not** in this picture: no EC2, no ELB, no ASG — no servers an
               └── SNS/SQS (messaging)
 ```
 
-Lambda is the second event-driven compute option in the model. Putting all three side by side:
+Lambda is the event-driven compute option in the model. Putting all three side by side:
 
 | Compute type | When to use it |
 |--------------|----------------|
@@ -133,11 +181,21 @@ If your job runs longer than 15 minutes, use Fargate or EC2 — not Lambda.
 
 ---
 
+## The mental shift
+
+The real change serverless asks for is in how you frame the problem:
+
+- **EC2 mindset:** "I have a server — what should I run on it?"
+- **Serverless mindset:** "I have events — what should happen when they fire?"
+
+---
+
 ## Summary
 
-- **Serverless** means you don't manage servers and you pay only for what you use.
+- **Serverless** means composing your app from small functions plus managed services, paying only when something happens, and scaling from zero to near-infinity automatically.
+- The trade-off: you give up control and long execution time in exchange for near-zero ops and zero idle cost.
 - **Lambda** runs functions on demand, scales automatically, and caps each run at 15 minutes.
 - **Use Lambda for** event-driven tasks, glue code, APIs, and scheduled jobs.
-- **Don't use Lambda for** long-running jobs, custom OS needs, or predictable steady traffic.
+- **Don't use Lambda for** long-running jobs, custom OS needs, or predictable steady traffic — reach for EC2 or Fargate there.
 
 ---
