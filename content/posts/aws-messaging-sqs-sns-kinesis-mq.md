@@ -151,7 +151,7 @@ Use it when you are lifting an on-prem app that already speaks MQTT/AMQP/STOMP i
 
 ---
 
-## How they fit in our architecture
+## How they fit together
 
 ```
                 Users

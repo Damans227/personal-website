@@ -1,5 +1,5 @@
 ---
-title: "AWS VPC: A Networking Crash Course"
+title: "AWS VPC: Your Private Network in the Cloud"
 date: 2026-05-18T12:00:00Z
 draft: false
 tags:
@@ -8,7 +8,7 @@ tags:
   - VPC
 ---
 
-Everything we have built so far — EC2, RDS, load balancers — actually lives *inside* a VPC. The VPC is the networking layer: the private network where your AWS resources sit. This is a crash course in the concepts, not deep config — enough to know what each piece does and, crucially, the security-group-vs-NACL distinction cold.
+Every resource you run in AWS — an EC2 instance, an RDS database, a load balancer — sits inside a network. That network is the VPC: a private, isolated slice of the AWS cloud that you control. Understanding it means understanding how traffic actually reaches your resources, and how you keep them protected. The single most important distinction to walk away with is security groups versus NACLs, so that gets special attention below.
 
 ---
 
@@ -79,7 +79,7 @@ Region
         └── Private subnet
 ```
 
-This is where our photo app's EC2s and RDS actually live — a public subnet for the load balancer, private subnets for the EC2s and the database.
+In a typical web app, the load balancer goes in a public subnet, while the application servers and database sit in private subnets — exposed only as much as they need to be.
 
 ---
 
@@ -107,7 +107,7 @@ IGW ──── Public Subnet (EC2 can reach internet directly)
 
 ## Firewalls — Security Groups vs NACLs
 
-This comparison is the most exam-relevant part of VPC.
+This is the distinction worth knowing cold.
 
 | | Security Group | NACL |
 |---|----------------|------|
@@ -122,7 +122,7 @@ This comparison is the most exam-relevant part of VPC.
 - A **security group** is the bouncer at each instance's door — stateful, an allow-list.
 - A **NACL** is the guard at the subnet's gate — stateless, and able to explicitly ban.
 
-**Stateful vs stateless** is the key concept:
+**Stateful vs stateless** is the heart of it:
 
 - With a security group, you allow inbound port 443 and the response goes out automatically.
 - With a NACL, you allow inbound 443 and you *also* must allow the outbound response port.
@@ -194,9 +194,9 @@ Client VPN        = your laptop ↔ AWS (OpenVPN)
 
 ---
 
-## Where this fits in our architecture
+## A typical VPC layout
 
-Everything we have built has been *inside* a VPC the whole time. Now it is explicit:
+Putting the pieces together, a standard three-tier web app maps onto a VPC like this:
 
 ```
 Region
@@ -211,7 +211,7 @@ Region
                            └── VPC Endpoint → S3 (private, no internet)
 ```
 
-The load balancer sits in public subnets (internet-facing). The EC2s and RDS sit in private subnets (protected). NAT lets them phone out, and VPC endpoints let them reach S3 privately.
+The load balancer sits in public subnets (internet-facing). The application servers and database sit in private subnets, protected from inbound traffic. NAT lets them phone out for updates, and a VPC endpoint lets them reach S3 without ever touching the public internet.
 
 ---
 
@@ -235,7 +235,7 @@ The load balancer sits in public subnets (internet-facing). The EC2s and RDS sit
 
 ---
 
-## The essentials to memorize
+## Quick reference
 
 - **VPC** is a regional private network; a **subnet** is an AZ-level partition.
 - **IGW** is public internet access (at the VPC level); **NAT** is private subnets' outbound internet.
