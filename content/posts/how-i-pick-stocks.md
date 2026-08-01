@@ -1,5 +1,5 @@
 ---
-title: "How I Pick Stocks (My Actual Process, In Plain English)"
+title: "How I Pick Stocks (My Actual Process)"
 date: 2026-05-20T10:00:00Z
 draft: false
 tags:
