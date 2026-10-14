@@ -1,6 +1,6 @@
 ---
 title: "The Hours After You Think You Heard a Dig"
-date: 2026-10-14T18:00:00Z
+date: 2026-10-14T17:00:00Z
 draft: false
 tags:
   - Psychology
