@@ -1,6 +1,6 @@
 ---
 title: "The Four Layers Under Every Fight"
-date: 2026-10-25T22:30:00Z
+date: 2026-10-25T22:00:00Z
 draft: false
 tags:
   - Psychology
