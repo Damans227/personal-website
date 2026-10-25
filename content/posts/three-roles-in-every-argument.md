@@ -34,7 +34,7 @@ That isn't random. There are three roles, and in a bad argument you cycle throug
 
 **Persecutor.** *"It's YOUR fault. Why can't you just do the thing I asked. You're always like this."* The persecutor role gives you a sense of power and righteousness. You get to be the one holding the standard. You get to blame.
 
-**Rescuer.** *"Don't worry, I'll handle it. Let me do it for you. You can't manage this on your own."* The rescuer role feels generous. It is often actually about control. The rescuer needs the victim to stay a victim, because otherwise who are they rescuing.
+**Rescuer.** *"Don't worry, I'll handle it. Let me do it for you. You can't manage this on your own."* The rescuer role feels generous. It is often actually about control. **The rescuer needs you to need them.** If the victim ever stands on their own, the rescuer loses their job, their sense of usefulness, and the quiet thing propping up their self-worth. So the rescuer, often without knowing it, keeps the victim slightly stuck.
 
 All three roles have one thing in common: **none of them is taking responsibility for themselves.** The victim is waiting to be saved. The persecutor is pointing at someone else. The rescuer is managing other people's lives instead of their own.
 
@@ -65,6 +65,26 @@ The triangle gets really sticky in close relationships, because the roles start 
 - At work: there's always "the problem person" (victim), the manager who's "fed up with them" (persecutor), and the colleague who "sticks up for them" (rescuer). Different week, same cast.
 
 The roles are complementary. **A rescuer needs a victim.** A persecutor needs someone to persecute. A victim needs a rescuer or a persecutor to keep the story going. When one person steps off, it destabilises everyone else, and they'll often pull hard to drag that person back on.
+
+---
+
+## The triangle at group scale
+
+The same triangle shows up at group scale, which is where it gets really sticky.
+
+A guru who needs an audience of broken people to feel important. A boss who positions himself as the only person who can fix the team's problems, and then quietly makes sure the team never actually solves them. A religious or wellness leader whose authority depends on his audience staying wounded. A political movement where the followers are the eternal victims, the enemy is the eternal persecutor, and the leader is the eternal rescuer.
+
+```
+LEADER (chronic rescuer)
+    needs
+       FOLLOWERS (chronic victims)
+          who need an
+             ENEMY (chronic persecutor)
+                who justifies the
+                   LEADER
+```
+
+The giveaway, every time, is this: **does the leader actually want the followers to not need them anymore?** If the answer is no, you're looking at a dependency culture, which is just the drama triangle wearing a bigger costume. The healthiest teachers, therapists, bosses and parents all share one feature: they are trying to work themselves out of the job.
 
 ---
 
@@ -127,5 +147,7 @@ If you keep nothing else from this post, keep this:
 Nobody wins on the triangle. The game is rigged against everyone on it, including you.
 
 ---
+
+*The three-role model is Stephen Karpman's drama triangle, from the early 1970s. His book is called* A Game Free Life*.*
 
 *This is not clinical or medical advice. If you are struggling with your mental health, talk to a qualified professional. These are personal notes, worked through in my own words.*
