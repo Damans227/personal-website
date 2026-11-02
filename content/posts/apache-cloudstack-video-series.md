@@ -10,8 +10,6 @@ tags:
 
 There are good CloudStack introductions and install videos out there. I wanted one series that follows a single cloud the whole way, from the first install to a production setup for customers, with every click and command shown. So I made it, free. I hope the CloudStack community finds it useful. Every script used in the videos is below.
 
-Watch the playlist: PLAYLIST_LINK
-
 ## Scripts
 
 ## Video 05a: MacVisor
@@ -1113,4 +1111,13 @@ write_files:
 runcmd:
   - systemctl enable --now dataco-page
   - nohup timeout 900 sh -c "while :; do :; done" >/dev/null 2>&1 &
+```
+
+### video-24-burst-load-balancer
+
+A public address and load balancer rule for the autoscale group. Chapter "Autoscale for the busy page", 14:33.
+
+```bash
+cmk associate ipaddress vpcid=VPC_ID filter=ipaddress,id
+cmk create loadbalancerrule name=dataco-burst-lb publicipid=BURST_IP_ID publicport=80 privateport=80 algorithm=roundrobin networkid=WEB_NETWORK_ID openfirewall=false filter=name,publicip,state
 ```
