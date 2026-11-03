@@ -84,6 +84,8 @@ params:
           url: "https://github.com/Damans227"
         - name: linkedin
           url: "https://www.linkedin.com/in/daman-arora/"
+        - name: youtube
+          url: "https://www.youtube.com/@DamanArora"
         - name: email
           url: "mailto:Damans227@gmail.com"
         - name: rss
