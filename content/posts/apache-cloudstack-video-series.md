@@ -10,6 +10,8 @@ tags:
 
 There are good CloudStack introductions and install videos out there. I wanted one series that follows a single cloud the whole way, from the first install to a production setup for customers, with every click and command shown. So I made it, free. I hope the CloudStack community finds it useful. Every script used in the videos is below.
 
+Watch the full series on YouTube: https://www.youtube.com/playlist?list=PLcdInawwZRUM
+
 ## Scripts
 
 ## Video 05a: MacVisor
